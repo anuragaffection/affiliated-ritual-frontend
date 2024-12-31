@@ -1,0 +1,10 @@
+.dashboard {
+  background-color: black;
+  display: flex;
+  color: white;
+}
+
+.maincontent {
+  width: 100%;
+  z-index: 1;
+}
