@@ -7,6 +7,7 @@
   font-family: "Poppins", "Nunito Sans", sans-serif;
   border-radius: 8px;
   gap: 2rem;
+  /* background-color: aliceblue; */
 }
 
 .progressCharts {
@@ -31,18 +32,10 @@
   margin-bottom: 2rem;
 }
 
-.pro {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
 .courses {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: #f3e681;
 }
 
@@ -54,10 +47,6 @@
 
   .heading {
     font-size: 1.5rem;
-  }
-
-  .pro {
-    gap: 1rem;
   }
 
   .courses {

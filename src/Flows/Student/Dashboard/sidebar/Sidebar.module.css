@@ -3,10 +3,10 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 25%;
-  max-width: 25%;
-  height: 99vh;
-  max-height: 99vh !important;
+  width: 20%;
+  max-width: 20%;
+  height: 100vh;
+  max-height: 100vh !important;
   overflow-y: auto;
   color: #fff;
   transition: all 0.5s linear;

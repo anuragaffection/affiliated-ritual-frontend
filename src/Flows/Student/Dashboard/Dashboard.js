@@ -66,7 +66,6 @@ const Dashboard = ({ handleLogout }) => {
         />
         {activeElement === 'education' ? <Edu /> : <Certificate />}
       </div>
-
       {/* this is modal, it will open when true, independent in itself */}
       <Logout showModal={showModal} closeModal={closeModal} handleLogout={handleLogout} />
     </div>

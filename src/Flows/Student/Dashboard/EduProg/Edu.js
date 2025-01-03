@@ -144,12 +144,9 @@ const Edu = () => {
         </div>
       </div>
 
+      <div className={styles.courses}>Your courses</div>
+      <Progress data={courseData} />
 
-
-      <div className={styles.pro}>
-        <div className={styles.courses}>Your courses</div>
-        <Progress data={courseData} />
-      </div>
     </div>
   );
 };
