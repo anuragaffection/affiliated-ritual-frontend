@@ -4,46 +4,48 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaQuoteRight } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa";
 
 function Feedback() {
     const feedback = [
         {
-            icon: "⭐",
-            title: "Expert Trainers",
-            description: "Get live training from Industry experts, Step by step from scratch. Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc.",
-            position: "UI/UX Designer"
+            userImg: "",
+            userName: "John Doe",
+            userReview: "The training was exceptional. The instructors were knowledgeable and provided hands-on experience that really helped me understand the concepts.",
+            userRating: 4.5
         },
         {
-            icon: "👨‍🏫",
-            title: "Most Advanced Training",
-            description: "Loaded with trending and most advanced AI based tools. 90% Practical Class. Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc.",
-            position: "Developer"
+            userImg: "",
+            userName: "Jane Smith",
+            userReview: "This was the most comprehensive training I have ever attended. The practical approach and advanced tools were exactly what I needed.",
+            userRating: 4.7
         },
         {
-            icon: "🎓",
-            title: "Earn Certificate",
-            description: "Undoubtedly the certificate will boost your career to get job fast. But, still you need to be skilled at first.",
-            position: "Project Manager"
+            userImg: "",
+            userName: "Michael Brown",
+            userReview: "The certification added great value to my resume. The content was well-structured, and the support team was very helpful throughout.",
+            userRating: 4.3
         },
         {
-            icon: "⭐",
-            title: "Freelancing Opportunity",
-            description: "Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc. Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc.",
-            position: "Freelancer"
+            userImg: "",
+            userName: "Emily Davis",
+            userReview: "Freelancing secrets revealed in the training were a game-changer for me. I started getting clients within a month of completing the course.",
+            userRating: 4.6
         },
         {
-            icon: "🎓",
-            title: "Placement Assistance",
-            description: "We provide 100% placement asst. from our sister concern and placement partner Mahadev Enterprise. Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc.",
-            position: "Consultant"
+            userImg: "",
+            userName: "William Johnson",
+            userReview: "The placement assistance was outstanding. They guided me throughout the process, and I landed a great job shortly after completing the training.",
+            userRating: 4.8
         },
         {
-            icon: "⭐",
-            title: "SAP Business",
-            description: "An automated business software where everything is free!. Learn the secret of international freelancing client from marketplace like Upwork, Fiverr etc.",
-            position: "Business Analyst"
+            userImg: "",
+            userName: "Sophia Martinez",
+            userReview: "The SAP business module training was incredible. It simplified complex processes and gave me the confidence to handle real-world projects.",
+            userRating: 4.4
         }
     ];
+
 
     const settings = {
         dots: true,
@@ -88,12 +90,17 @@ function Feedback() {
                             <div className={styles.feedbackItpWrapper}>
                                 <div className={styles.feedbackIcon}>{item.icon}</div>
                                 <div className={styles.feedbackTpWrapper}>
-                                    <div className={styles.feedbackTitle}>{item.title}</div>
-                                    <div className={styles.feedbackPosition}>{item.position}</div>
+
+                                    {/* google user name */}
+                                    <div className={styles.feedbackTitle}>{item.userName}</div>
+
+                                    {/* google ratings - start */}
+                                    <div className={styles.feedbackPosition}>{item.userRating}</div>
                                 </div>
-                                <FaQuoteRight className={styles.feedbackQuoteRight} />
+                                {/* google icons - replace */}
+                                <FaGoogle className={styles.feedbackQuoteRight} />
                             </div>
-                            <div className={styles.feedbackDescription}>{item.description}</div>
+                            <div className={styles.feedbackDescription}>{item.userReview}</div>
                         </div>
                     ))}
                 </Slider>
